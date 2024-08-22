@@ -21,7 +21,7 @@ st.subheader("Tus palabras en varios idiomas.")
 
 image = Image.open('Animales_Traduc.jpeg')
 
-st.image(image,width=100)
+st.image(image,width=500)
 with st.sidebar:
     st.subheader("Traductor.")
     st.write("Presiona y habla"
@@ -29,9 +29,9 @@ with st.sidebar:
                  " la configuración de lenguaje que necesites.")
 
 
-st.write("Toca el Botón y habla lo que quires traducir")
+st.write("Presiona y habla lo que quires traducir")
 
-stt_button = Button(label=" Escuchar  🎤", width=300,  height=50)
+stt_button = Button(label="Hablar", width=500,  height=70)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
