@@ -16,16 +16,16 @@ from googletrans import Translator
 
 
 st.title("TRADUCTOR.")
-st.subheader("Escucho lo que quieres traducir.")
+st.subheader("Tus palabras en varios idiomas.")
 
 
 image = Image.open('Animales_Traduc.jpeg')
 
-st.image(image,width=300)
+st.image(image,width=100)
 with st.sidebar:
     st.subheader("Traductor.")
-    st.write("Presiona el botón, cuando escuches la señal "
-                 "habla lo que quieres traducir, luego selecciona"   
+    st.write("Presiona y habla"
+                 "Di las palabras correctas que necesitas traducir"   
                  " la configuración de lenguaje que necesites.")
 
 
